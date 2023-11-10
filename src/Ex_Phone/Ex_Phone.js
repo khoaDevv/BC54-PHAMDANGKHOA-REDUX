@@ -8,6 +8,7 @@ export default class Ex_Phone extends Component {
     phoneArr: phoneArr,
     phoneSelected: phoneArr[1],
   };
+
   handleChangeDetail = (phone) => {
     this.setState({ phoneSelected: phone });
   };
@@ -23,3 +24,5 @@ export default class Ex_Phone extends Component {
     );
   }
 }
+// có ôn :1
+// ko : 0

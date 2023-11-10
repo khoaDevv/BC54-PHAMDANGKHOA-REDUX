@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 export default class Item extends Component {
   render() {
     let { hinhAnh, tenSP } = this.props.phoneData;
@@ -9,18 +8,25 @@ export default class Item extends Component {
           <img src={hinhAnh} alt />
           <div className="card-body">
             <h4 className="card-title">{tenSP}</h4>
-            <p className="card-text">Body</p>
-            <button
-              onClick={() => {
-                this.props.handleViewDatail(this.props.phoneData);
-              }}
-              className="btn btn-warning"
-            >
-              View Detail
-            </button>
+            <p className="card-text">
+              <button
+                onClick={() => {
+                  this.props.handleViewDetail(this.props.phoneData);
+                }}
+                className="btn btn-warning"
+              >
+                View Detail
+              </button>
+            </p>
           </div>
         </div>
       </div>
     );
   }
 }
+// b4 card aline
+
+let a = 2;
+let b = a;
+let c = b;
+let d = c;

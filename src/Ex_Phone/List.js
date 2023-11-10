@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Item from "./Item";
+
 export default class List extends Component {
   render() {
     console.log(this.props.phoneList);
@@ -8,7 +9,7 @@ export default class List extends Component {
         {this.props.phoneList.map((item) => {
           return (
             <Item
-              handleViewDatail={this.props.handleViewDatail}
+              handleViewDetail={this.props.handleChangeDetail}
               phoneData={item}
             />
           );

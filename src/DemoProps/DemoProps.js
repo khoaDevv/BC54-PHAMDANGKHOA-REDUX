@@ -3,7 +3,7 @@ import Profile from "./Profile";
 
 export default class DemoProps extends Component {
   state = {
-    name: "Alice",
+    name: "alice",
   };
   handleChangeName = (newName) => {
     this.setState({ name: newName });
@@ -12,7 +12,7 @@ export default class DemoProps extends Component {
     let title = "Profile Card";
     return (
       <div className="p-5 bg-warning">
-        <h2> DemoProps</h2>
+        <h2>DemoProps</h2>
         <Profile
           content={title}
           name={this.state.name}
@@ -30,3 +30,7 @@ export default class DemoProps extends Component {
     );
   }
 }
+
+// thông tin user đặt ở DemoProps
+
+//  nơi hiển thị thông tin Profile

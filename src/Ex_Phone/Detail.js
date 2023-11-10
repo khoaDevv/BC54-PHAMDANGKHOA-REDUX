@@ -9,7 +9,7 @@ export default class Detail extends Component {
           <tr>
             <th>Name</th>
             <th>Price</th>
-            <th>Desc</th>
+            <th>Camera</th>
           </tr>
         </thead>
         <tbody>

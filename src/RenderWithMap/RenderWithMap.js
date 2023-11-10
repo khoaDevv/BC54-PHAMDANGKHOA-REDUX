@@ -20,13 +20,13 @@ export default class RenderWithMap extends Component {
             src={item.hinhAnh}
             alt=""
           />
-          <p>{item.tenPhim}</p>;
+          <p>{item.tenPhim}</p>
         </div>
       );
     });
   };
   render() {
     console.log(movieArr.length);
-    return <div>{this.renderMovieList()}</div>;
+    return <div className="row">{this.renderMovieList()}</div>;
   }
 }

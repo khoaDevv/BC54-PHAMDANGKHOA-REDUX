@@ -1,10 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class ClassComponent extends Component {
   render() {
-    return (
-      <div>ClassComponent</div>
-    )
+    return <div>ClassComponent</div>;
   }
 }
 // rcc

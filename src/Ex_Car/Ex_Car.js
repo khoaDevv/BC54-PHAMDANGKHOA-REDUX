@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-export default class ex_car extends Component {
+export default class Ex_Car extends Component {
   state = {
     color: "red",
   };
-  handleChangeColor = (color) => {
+  hanldeChangeColor = (color) => {
     this.setState({ color: color });
   };
   render() {
@@ -17,7 +17,7 @@ export default class ex_car extends Component {
         />
         <button
           onMouseOver={() => {
-            this.handleChangeColor("red");
+            this.hanldeChangeColor("red");
           }}
           className="btn btn-danger"
         >
@@ -25,15 +25,15 @@ export default class ex_car extends Component {
         </button>
         <button
           onMouseOver={() => {
-            this.handleChangeColor("black");
+            this.hanldeChangeColor("black");
           }}
           className="btn btn-dark"
         >
-          Blak
+          Black
         </button>
         <button
           onMouseOver={() => {
-            this.handleChangeColor("silver");
+            this.hanldeChangeColor("silver");
           }}
           className="btn btn-secondary"
         >
