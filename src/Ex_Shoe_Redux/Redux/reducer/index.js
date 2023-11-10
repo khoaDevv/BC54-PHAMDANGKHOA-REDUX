@@ -35,7 +35,10 @@ export let shoeReducer = (state = initialState, action) => {
       let { id, quantity } = action.payload;
       let updatedCart = state.cart.map((item) => {
         if (item.id === id) {
-          return { ...item, cartQuantity: item.cartQuantity + quantity };
+          return {
+            ...item,
+            cartQuantity: Math.max(1, item.cartQuantity + quantity),
+          };
         }
         return item;
       });
